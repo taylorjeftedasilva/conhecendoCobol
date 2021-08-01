@@ -1,0 +1,32 @@
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID. PROG08.
+        ENVIRONMENT DIVISION.
+      *>**************************************
+      *> ÁREA DE COMENTÁRIOS
+      *> OBJETIVO = USAR EVALUATE
+      *> AUTOR = TAYLOR
+      *> DATA 01/08/2021
+      *>**************************************
+      CONFIGURATION SECTION.
+      SPECIAL-NAMES.
+          DECIMAL-POINT IS COMMA.
+      DATA DIVISION.
+      WORKING-STORAGE SECTION.
+      77 WRK-NOTA1                PIC IS  9(2)V99 VALUES ZEROS.
+      77 WRK-NOTA2                PIC IS  9(2)V99 VALUES ZEROS.
+      77 WRK-RESUL                PIC IS  9(2)V99 VALUES ZEROS.
+      PROCEDURE DIVISION.
+      ACCEPT WRK-NOTA1 FROM CONSOLE.
+      ACCEPT WRK-NOTA2 FROM CONSOLE.
+      COMPUTE WRK-RESUL = (WRK-NOTA1 + WRK-NOTA2) / 2.
+      EVALUATE WRK-RESUL,
+         *> THRU EQUIVALE ATE EX: 6 THRU 10 == DE 6 ATE 10
+         WHEN > 6 THRU 10
+            DISPLAY "APROVADO"
+         WHEN 4
+            DISPLAY "RECUPERACAO"
+         WHEN OTHER
+            DISPLAY "REPROVADO"
+      END-EVALUATE.
+      DISPLAY "RESULTADO: " WRK-RESUL.
+      STOP RUN.
