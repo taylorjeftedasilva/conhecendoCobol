@@ -1,11 +1,11 @@
         IDENTIFICATION DIVISION.
         PROGRAM-ID. PROG02.
-        ENVIRONMENT DIVISION.
        *>*************************************
        *> ÁREA DE COMENTÁRIOS DO COBOL
        *> AUTOR = TAYLOR 
        *> OBJETIVO = IMPRIMIR UMA VARIAVEL 
-       *>**************************************  
+       *>**************************************         
+        ENVIRONMENT DIVISION. 
         DATA DIVISION.
        *> SEÇÃO PARA DECLARAR VARIAVEIS
         WORKING-STORAGE SECTION.

@@ -1,11 +1,11 @@
         IDENTIFICATION DIVISION.
         PROGRAM-ID. PROG04.
-        ENVIRONMENT DIVISION.
       *>********************************************
       *> ÁREA DE COMENTÁRIOS DO COBOL
       *> AUTOR TAYLOR
       *> OBJETIVO TROCA DE FLUTUANTE . PARA VIRGULA.
       *>********************************************
+        ENVIRONMENT DIVISION.
         CONFIGURATION SECTION.
         SPECIAL-NAMES.
             DECIMAL-POINT IS COMMA.

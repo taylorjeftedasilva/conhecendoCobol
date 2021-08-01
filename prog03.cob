@@ -1,11 +1,11 @@
         IDENTIFICATION DIVISION.
         PROGRAM-ID. PROG03.
-        ENVIRONMENT DIVISION.
        *>**************************************************
        *> ÁREA DE COMENTÁRIO DO PROGRAMA COBOL
        *> AUTOR = TAYLOR
        *> OBJETIVO = IMPRIMIR UMA DATA NO FORMATO CORRETO
-       *>**************************************************  
+       *>************************************************** 
+        ENVIRONMENT DIVISION. 
         DATA DIVISION.
         WORKING-STORAGE SECTION.
         01 WRK-DATA.
